@@ -15,15 +15,15 @@ install:
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
 	# install hadolint
-	sudo wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 && sudo chmod +x /bin/hadolint
-	sudo chmod +x /bin/hadolint
+	# sudo wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 && sudo chmod +x /bin/hadolint
+	# sudo chmod +x /bin/hadolint
 	# install minikube
-	curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
-	sudo install minikube-linux-amd64 /usr/local/bin/minikube
+	# curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+	# sudo install minikube-linux-amd64 /usr/local/bin/minikube
 	# install kubectl
-	curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
-	sudo chmod +x ./kubectl
-	sudo mv ./kubectl /usr/local/bin/kubectl
+	# curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+	# sudo chmod +x ./kubectl
+	# sudo mv ./kubectl /usr/local/bin/kubectl
 
 test:
 	# Additional, optional, tests could go here

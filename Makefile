@@ -15,7 +15,7 @@ install:
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
 	# install hadolint
-	wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 && sudo chmod +x /bin/hadolint
+	wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 && chmod +x /bin/hadolint
 	chmod +x /bin/hadolint
 	# install minikube
 	curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
